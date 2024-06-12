@@ -1,0 +1,152 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0f0f0f;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
+    max-width: 1289px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to top, #43434300, #000);
+    justify-content: space-between;;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition: .5s;
+}
+
+header .logo img{
+    position: relative;
+    left: 30px;
+    height:35px;
+    width: 150px;
+}
+
+header a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: .2s;
+}
+
+header a:hover{
+    transform: scale(1.05);
+    color: rgba(255, 255, 255, 0.747);
+}
+
+header .navegacao ul{
+    list-style-type: none;
+}
+
+header .navegacao ul li{
+    display: inline-block;
+    padding: 0 10px;
+    transition: .5s;
+    position: relative;
+    left: -300px;
+}
+
+header .navegacao ul li:hover{
+    
+    color: rgba(255, 255, 255, 0.747);
+    transform: scale(1.09);
+}
+
+header .pesquisa i{
+    position: relative;
+    left: -80px;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.corpo .back img{
+    max-width: 1280px;
+    width: 200%;
+    height: 100%;
+    z-index: 99;
+}
+
+.corpo .descrissao{
+   z-index: 100;
+   position: relative;
+   top: -700px;
+   left: 40px;
+}
+
+.corpo .descrissao h3{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.678);
+}
+
+.corpo .descrissao .play{
+    
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.corpo .descrissao .play span{
+    font-size: 40px;
+    display: inline-block;
+    position: absolute; 
+    top: 50%;
+    left: 30px;
+    transform: translate(-50%, -50%); /* Centraliza o span */
+}
+
+.corpo .descrissao .play:hover{
+    background-color: rgb(170, 169, 169);
+}
+.corpo .descrissao .info{
+    background-color: #797777ab;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    position: relative;
+    cursor: pointer;
+    top: -2px;
+   
+}
+
+.corpo .descrissao .info span{
+    font-size: 25px;
+    display: inline-block;
+    position: absolute; 
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%); /* Centraliza o span */
+}
+
+.corpo .descrissao .info:hover{
+    background-color: #47464696;
+}
