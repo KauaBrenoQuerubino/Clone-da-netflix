@@ -8,21 +8,20 @@ body{
 
 header {
     width: 100%;
-    max-height: 50px;
-    height: 100%;
-    max-width: 1289px;
-    margin: 0 auto;
+    height: 50px;
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: linear-gradient(to top, #43434300, #000);
-    justify-content: space-between;;
-    z-index: 10000;
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
+    z-index: 1000;
     transition: .5s;
 }
+
+
 
 header .logo img{
     position: relative;
@@ -75,8 +74,9 @@ header .pesquisa i{
 }
 
 .corpo .back img{
-    max-width: 1280px;
-    width: 200%;
+    position:static;
+    object-fit: cover;
+    width: 100%;
     height: 100%;
     z-index: 99;
 }
@@ -150,3 +150,126 @@ header .pesquisa i{
 .corpo .descrissao .info:hover{
     background-color: #47464696;
 }
+
+.SonaNetflix span{
+    color: rgb(37, 160, 218);
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+    top: -496px;
+    left: 160px;
+    visibility: hidden;
+}
+
+
+
+.SonaNetflix h3{
+    font-size: 20 px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: -540px;
+    left: 100px;
+    color: white;
+}
+.SoNaNetflixCatalogo {
+    position: relative;
+    left: 0px;
+    top: -550px;
+    display: flex;
+    transition: 1s ease-in-out;
+}
+
+.SoNaNetflixCatalogo .catalgo{
+    margin: 5px;
+}
+
+.SoNaNetflixCatalogo .catalgo img{
+    height: 140px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .4s;
+}
+
+.SoNaNetflixCatalogo .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+.retroceder, .avancar{
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    border: none;
+    transition: .2s;
+    background: #00000000;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.678);
+    visibility: hidden;
+}
+
+.retroceder{
+    z-index: 1000000;
+    /*background: linear-gradient(to left, #43434300, #000);*/
+    position: relative;
+    left: 40px;
+}
+.avancar{
+    /*background: linear-gradient(to right, #43434300, #000);*/
+    position: relative;
+    left: -40px;
+}
+
+.retroceder:hover, .avancar:hover{
+    transform: scale(1.2);
+}
+
+.SoNaNetflixCatalogo2 {
+    position: relative;
+    left: 1280px;
+    top: -700px;
+    display: flex;
+    transition: 1s ease-in-out;
+    visibility: hidden;
+}
+
+.SoNaNetflixCatalogo2 .catalgo{
+    margin: 5px;
+}
+
+.SoNaNetflixCatalogo2 .catalgo img{
+    height: 140px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.SoNaNetflixCatalogo2 .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+.retroceder2, .avancar2{
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    border: none;
+    transition: .10s;
+    background: #00000000;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.678);
+    visibility: hidden;
+}
+
+.retroceder2{
+    z-index: 1000000;
+    /*background: linear-gradient(to left, #43434300, #000);*/
+    position: relative;
+    left: 40px;
+}
+.avancar2{
+    /*background: linear-gradient(to right, #43434300, #000);*/
+    position: relative;
+    left: -40px;
+}
+
+.retroceder2:hover, .avancar2:hover{
+    transform: scale(1.2);
+}
+
