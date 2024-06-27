@@ -2,8 +2,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0f0f0f;
-    height: 100vh;
+    background-color: #141414;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10000000000000000000000000000000000000000000000;
     transition: .5s;
 }
 
@@ -72,6 +72,7 @@ header .pesquisa i{
     padding: 0 10px;
     cursor: pointer;
 }
+
 
 .corpo .back img{
     position:static;
@@ -151,33 +152,29 @@ header .pesquisa i{
     background-color: #47464696;
 }
 
-.SonaNetflix span{
-    color: rgb(37, 160, 218);
+.SonaNetflix{
+    align-items: center;
+    justify-content: center;
     position: relative;
-    font-size: 20px;
-    font-weight: 900;
-    top: -496px;
-    left: 160px;
-    visibility: hidden;
+    
 }
-
-
 
 .SonaNetflix h3{
     font-size: 20 px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     position: relative;
-    top: -540px;
-    left: 100px;
+    top: -570px;
+    left: 29px;
     color: white;
 }
 .SoNaNetflixCatalogo {
+    z-index: 10000010;
     position: relative;
     left: 0px;
-    top: -550px;
+    top: -650px;
     display: flex;
-    transition: 1s ease-in-out;
+    transition: .6s ease-in-out;
 }
 
 .SoNaNetflixCatalogo .catalgo{
@@ -196,6 +193,7 @@ header .pesquisa i{
 }
 
 .retroceder, .avancar{
+    z-index: 10000011;
     color: white;
     font-size: 50px;
     font-weight: 900;
@@ -207,15 +205,18 @@ header .pesquisa i{
 }
 
 .retroceder{
-    z-index: 1000000;
+    
     /*background: linear-gradient(to left, #43434300, #000);*/
     position: relative;
-    left: 40px;
+    top: -550px;
+    left: -25px;
 }
 .avancar{
     /*background: linear-gradient(to right, #43434300, #000);*/
+    
     position: relative;
-    left: -40px;
+    top: -550px;
+    left: 1150px;
 }
 
 .retroceder:hover, .avancar:hover{
@@ -224,10 +225,10 @@ header .pesquisa i{
 
 .SoNaNetflixCatalogo2 {
     position: relative;
-    left: 1280px;
-    top: -700px;
+    left: 1250px;
+    top: -805px;
     display: flex;
-    transition: 1s ease-in-out;
+    transition: .6s ease-in-out;
     visibility: hidden;
 }
 
@@ -246,30 +247,405 @@ header .pesquisa i{
     transform: scale(1.05);
 }
 
-.retroceder2, .avancar2{
+
+.SoNaNetflixCatalogo3 {
+    position: relative;
+    left: -1270px;
+    top: -963px;
+    display: flex;
+    transition: .6s ease-in-out;
+    visibility: hidden;
+}
+
+.SoNaNetflixCatalogo3 .catalgo{
+    margin: 5px;
+}
+
+.SoNaNetflixCatalogo3 .catalgo img{
+    height: 140px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.SoNaNetflixCatalogo3 .catalgo img:hover{
+    transform: scale(1.05);
+}
+.NewStorys {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -400px;
+    left: 0;
+}
+
+.NewStorys span{
+    color: rgb(37, 160, 218);
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+    top: -496px;
+    left: 160px;
+    visibility: hidden;
+}
+
+
+
+.NewStorys h3{
+    font-size: 20 px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: -570px;
+    left: 29px;
+    color: white;
+}
+.NewStorysCatalogo {
+    z-index: 10000010;
+    position: relative;
+    left: 0px;
+    top: -650px;
+    display: flex;
+    transition: .6s ease-in-out;
+}
+
+.NewStorys .catalgo{
+    margin: 10px;
+}
+
+.NewStorys .catalgo img{
+    height: 140px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .4s;
+}
+
+.NewStorys .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+.NewStorys .retroceder2, .NewStorys .avancar2{
+    z-index: 10000011;
     color: white;
     font-size: 50px;
     font-weight: 900;
     border: none;
-    transition: .10s;
+    transition: .2s;
     background: #00000000;
     text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.678);
     visibility: hidden;
 }
 
-.retroceder2{
-    z-index: 1000000;
+.NewStorys .retroceder2{
+    
     /*background: linear-gradient(to left, #43434300, #000);*/
     position: relative;
-    left: 40px;
+    top: -550px;
+    left: -25px;
 }
-.avancar2{
+.NewStorys .avancar2{
     /*background: linear-gradient(to right, #43434300, #000);*/
+    
     position: relative;
-    left: -40px;
+    top: -550px;
+    left: 1150px;
 }
 
-.retroceder2:hover, .avancar2:hover{
+.NewStorys .retroceder2:hover, .NewStorys .avancar2:hover{
     transform: scale(1.2);
 }
+
+.NewStorysCatalogo2 {
+    position: relative;
+    left: 1250px;
+    top: -805px;
+    display: flex;
+    transition: .6s ease-in-out;
+    visibility: hidden;
+}
+
+.NewStorysCatalogo2 .catalgo{
+    margin: 10px;
+}
+
+.NewStorysCatalogo2 .catalgo img{
+    height: 140px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.NewStorysCatalogo2 .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+
+.NewStorysCatalogo3 {
+    position: relative;
+    left: -1270px;
+    top: -963px;
+    display: flex;
+    transition: .6s ease-in-out;
+    visibility: hidden;
+}
+
+.NewStorysCatalogo3 .catalgo{
+    margin: 10px;
+}
+
+.NewStorysCatalogo3 .catalgo img{
+    height: 140px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.NewStorysCatalogo3 .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+
+.NewStorys span{
+    color: rgb(37, 160, 218);
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+    top: -496px;
+    left: 160px;
+    visibility: hidden;
+}
+
+.top1a10 h3{
+    z-index: 1000000000000;
+    font-size: 20 px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: -1350px;
+    left: 29px;
+    color: white;
+
+}
+
+.top1a10 .top5{
+    position: relative;
+    left: 0;
+    top: -1450px;
+    display: flex;
+    transition: .6s ease-in-out;
+    visibility: visible;
+}
+
+.top5 .catalgo{
+    margin: 8px;
+}
+
+.top5 .catalgo img{
+    height: 180px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .2s;
+    cursor: pointer;
+    
+    
+}
+
+.top5 .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+.top1a10 .top10{
+    position: relative;
+    left: 1300px;
+    top: -1650px;
+    display: flex;
+    transition: .6s ease-in-out;
+    visibility: hidden;
+}
+
+.top10 .catalgo{
+    margin: 8px;
+}
+
+.top10 .catalgo img{
+    height: 180px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .2s;
+    cursor: pointer;
+    
+    
+}
+
+.top10 .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+.retroceder3, .avancar3{
+    z-index: 10000011;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    background: #00000000;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.678);
+    visibility: visible;
+    top: -1310px;
+}
+
+.retroceder3{
+    
+    /*background: linear-gradient(to left, #43434300, #000);*/
+    position: relative;
+    left: 0px;
+    visibility: hidden;
+}
+.avancar3{
+    /*background: linear-gradient(to right, #43434300, #000);*/
+    
+    position: relative;
+    left: 1160px;
+}
+
+.retroceder3:hover, .avancar3:hover{
+    transform: scale(1.2);
+}
+
+.ProducoesDeHollywood {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -1080px;
+    left: 0;
+}
+
+.ProducoesDeHollywood span{
+    color: rgb(37, 160, 218);
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+    top: -496px;
+    left: 160px;
+    visibility: hidden;
+}
+
+
+
+.ProducoesDeHollywood h3{
+    font-size: 20 px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: -570px;
+    left: 29px;
+    color: white;
+}
+.ProducoesDeHollywoodCatalogo {
+    z-index: 10000010;
+    position: relative;
+    left: 0px;
+    top: -650px;
+    display: flex;
+    transition: .6s ease-in-out;
+}
+
+.ProducoesDeHollywood .catalgo{
+    margin: 10px;
+}
+
+.ProducoesDeHollywood .catalgo img{
+    height: 140px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .4s;
+}
+
+.ProducoesDeHollywood .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+.ProducoesDeHollywood .retroceder4, .ProducoesDeHollywood .avancar4{
+    z-index: 10000011;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    border: none;
+    transition: .2s;
+    background: #00000000;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.678);
+    visibility: visible;
+}
+
+.ProducoesDeHollywood .retroceder4{
+    
+    /*background: linear-gradient(to left, #43434300, #000);*/
+    position: relative;
+    top: -550px;
+    left: 0px;
+}
+.ProducoesDeHollywood .avancar4{
+    /*background: linear-gradient(to right, #43434300, #000);*/
+    
+    position: relative;
+    top: -550px;
+    left: 1150px;
+}
+
+.ProducoesDeHollywood .retroceder4:hover, .ProducoesDeHollywood .avancar4:hover{
+    transform: scale(1.2);
+}
+
+.ProducoesDeHollywoodCatalogo2 {
+    position: relative;
+    left: 1250px;
+    top: -805px;
+    display: flex;
+    transition: .6s ease-in-out;
+    visibility: hidden;
+}
+
+.ProducoesDeHollywoodCatalogo2 .catalgo{
+    margin: 10px;
+}
+
+.ProducoesDeHollywoodCatalogo2 .catalgo img{
+    height: 140px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.ProducoesDeHollywoodCatalogo2 .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+
+.ProducoesDeHollywoodCatalogo3 {
+    position: relative;
+    left: -1270px;
+    top: -963px;
+    display: flex;
+    transition: .6s ease-in-out;
+    visibility: hidden;
+}
+
+.ProducoesDeHollywoodCatalogo3 .catalgo{
+    margin: 10px;
+}
+
+.ProducoesDeHollywoodCatalogo3 .catalgo img{
+    height: 140px;
+    width: auto ;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.ProducoesDeHollywoodCatalogo3 .catalgo img:hover{
+    transform: scale(1.05);
+}
+
+
 
